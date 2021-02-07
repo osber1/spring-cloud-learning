@@ -14,12 +14,11 @@
 ## To run vault dev server: 
 "vault server -dev"
 
-## You need to use root token to connect to vault in bootstrap.properties
+### You need to use root token to connect microservice to vault in bootstrap.properties file.
 
+### To refresh properties, use */actuator/busrefresh on any endpoint.
 
-## To refresh properties, use */actuator/busrefresh
-
-## To run keycloack inside */bin folder run
+### To run keycloack server, inside */bin folder run:
 
 "standalone.bat -Djboss.http.port=8180"
 
