@@ -1,0 +1,9 @@
+vault server -dev
+cd D:/Java_Projects/spring-cloud-learning/order-service
+vault kv put secret/order-service @order-service.json
+cd D:/Java_Projects/spring-cloud-learning/product-service
+vault kv put secret/product-service @product-service.json
+cd D:/Java_Projects/spring-cloud-learning/inventory-service
+vault kv put secret/product-service @inventory-service.json
+
+standalone.bat -Djboss.http.port=8180
