@@ -16,7 +16,7 @@ public class InventoryController {
     private final InventoryRepository repository;
 
     @GetMapping("{skuCode}")
-    Boolean inStock(@PathVariable String skuCode) {
+    Boolean inInStock(@PathVariable String skuCode) {
         Inventory inventory = repository.findBySkuCode(skuCode)
                 .orElseThrow(() -> new RuntimeException("Cannot find product by sku code: " + skuCode));
         return inventory.getStock() > 0;
