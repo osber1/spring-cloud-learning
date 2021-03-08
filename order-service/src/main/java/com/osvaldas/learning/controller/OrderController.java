@@ -9,7 +9,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JCircuitBreaker;
 import org.springframework.cloud.circuitbreaker.resilience4j.Resilience4JCircuitBreakerFactory;
 import org.springframework.cloud.stream.function.StreamBridge;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.UUID;
 import java.util.function.Supplier;
@@ -46,11 +49,6 @@ public class OrderController {
         } else {
             return "Order Failed - One of the Product in your Order is out of stock";
         }
-    }
-
-    @GetMapping
-    public String hello() {
-        return "hello";
     }
 
     private Boolean handleErrorCase() {
