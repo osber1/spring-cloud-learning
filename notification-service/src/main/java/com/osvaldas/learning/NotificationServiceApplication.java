@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 
 import java.util.function.Consumer;
 
-@EnableEurekaClient
+// @EnableEurekaClient
 @SpringBootApplication
 public class NotificationServiceApplication {
     public static void main(String[] args) {
