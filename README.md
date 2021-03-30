@@ -8,17 +8,26 @@
 
 # Vault
 
-## To add anythin to vault use:
-"vault kv put secret/{FOLDER-NAME} @{JSON-FILE.json}"
-
 ## To run vault dev server: 
-"vault server -dev"
+```bash
+vault server -dev
+vault kv put secret/order-service @order-service.json
+vault kv put secret/product-service @product-service.json
+vault kv put secret/product-service @inventory-service.json
+```
 
-### You need to use root token to connect microservice to vault in bootstrap.properties file.
+## Information
 
-### To refresh properties, use */actuator/busrefresh on any endpoint.
+You need to use root token to connect microservice to Vault in bootstrap.properties file.
 
-### To run keycloack server, inside */bin folder run:
+To refresh properties, use */actuator/busrefresh on any endpoint.
 
-"standalone.bat -Djboss.http.port=8180"
+To run keycloack server, inside */bin folder run:
 
+# Keycloak
+
+## Run keycloak
+
+```bash
+standalone.bat -Djboss.http.port=8180
+```
