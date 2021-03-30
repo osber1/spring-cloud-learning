@@ -13,7 +13,7 @@
 vault server -dev
 vault kv put secret/order-service @order-service.json
 vault kv put secret/product-service @product-service.json
-vault kv put secret/product-service @inventory-service.json
+vault kv put secret/inventory-service @inventory-service.json
 ```
 
 ### Information
