@@ -6,9 +6,9 @@
 - [RabbitMQ](https://www.rabbitmq.com/)
 - [Keycloak](https://www.keycloak.org/)
 - [Zipkin](https://zipkin.io/)
-- [Elasticsearch](https://www.elastic.co/downloads/elasticsearch
-- [Logstash](https://www.elastic.co/downloads/logstash
-- [Kibana](https://www.elastic.co/downloads/kibana
+- [Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
+- [Logstash](https://www.elastic.co/downloads/logstash)
+- [Kibana](https://www.elastic.co/downloads/kibana)
 
 # Vault
 
