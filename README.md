@@ -44,6 +44,22 @@ standalone.bat -Djboss.http.port=8180
 java -jar zipkin.jar
 ```
 
+# Logstash
+
+## Run Logstash
+
+```bash
+logstash.bat -f logstash.conf
+```
+
+# Kibana
+
+## Run Kibana
+
+```bash
+kibana.bat
+```
+
 # Endpoints
 
 http://localhost:5000 - Logstash server  
