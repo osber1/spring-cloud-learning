@@ -5,6 +5,10 @@
 - [Vault](https://www.vaultproject.io/)
 - [RabbitMQ](https://www.rabbitmq.com/)
 - [Keycloak](https://www.keycloak.org/)
+- [Zipkin](https://zipkin.io/)
+- [Elasticsearch](https://www.elastic.co/downloads/elasticsearch
+- [Logstash](https://www.elastic.co/downloads/logstash
+- [Kibana](https://www.elastic.co/downloads/kibana
 
 # Vault
 
@@ -31,3 +35,23 @@ To run keycloack server, inside */bin folder run:
 ```bash
 standalone.bat -Djboss.http.port=8180
 ```
+
+# Zipkin
+
+## Run Zipkin
+
+```bash
+java -jar zipkin.jar
+```
+
+# Endpoints
+
+http://localhost:5000 - Logstash server
+http://localhost:5601 - Kibana server
+http://localhost:8080 - main endpoint
+http://localhost:8180 - Keycloak server
+http://localhost:8200 - Vault server
+http://localhost:8761 - Eureka server
+http://localhost:8888 - Cloud server
+http://localhost:9200 - Elasticsearch server
+http://localhost:15672 - RabbitMQ server
