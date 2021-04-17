@@ -46,12 +46,12 @@ java -jar zipkin.jar
 
 # Endpoints
 
-http://localhost:5000 - Logstash server
-http://localhost:5601 - Kibana server
-http://localhost:8080 - main endpoint
-http://localhost:8180 - Keycloak server
-http://localhost:8200 - Vault server
-http://localhost:8761 - Eureka server
-http://localhost:8888 - Cloud server
-http://localhost:9200 - Elasticsearch server
-http://localhost:15672 - RabbitMQ server
+http://localhost:5000 - Logstash server  
+http://localhost:5601 - Kibana server  
+http://localhost:8080 - main endpoint  
+http://localhost:8180 - Keycloak server  
+http://localhost:8200 - Vault server  
+http://localhost:8761 - Eureka server  
+http://localhost:8888 - Cloud server  
+http://localhost:9200 - Elasticsearch server  
+http://localhost:15672 - RabbitMQ server  
